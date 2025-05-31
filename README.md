@@ -472,7 +472,7 @@ Now that Foundry is installed, let’s set up the required libraries for your sm
 - Navigate to Contract Directory
 
 ```bash
-cd ~/infernet-container-starter/projects/hello-world/contracts && \
+cd ~/infernet-container-starter/projects/hello-world/contracts
 ```
 - Clean up Old Libs (if any)
 
