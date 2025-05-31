@@ -109,20 +109,30 @@ cd $HOME
 Download the Ritual Infernet Node code from GitHub.
 
 ```bash
-git clone https://github.com/ritual-net/infernet-node.git
+git clone https://github.com/ritual-net/infernet-container-starter
 ```
 
 Enter the cloned project folder.
 
 ```bash
-cd infernet-node
+cd infernet-container-starter
 ```
+## Running the hello-world Container
 
-Create your own .env config file by copying the provided template.
+Before running this step, make sure Docker is running in the background (especially if you're on a local PC or using Docker Desktop).
 
+- Pull the Hello-World Container
 
 ```bash
-Creates your own .env config file by copying the provided template.
+docker pull ritualnetwork/hello-world-infernet:latest
+```
+
+This pulls the latest hello-world container image from Ritual Network's Docker Hub.
+
+- Deploy the Container
+
+```bash
+project=hello-world make deploy-container
 ```
 
 ## Step 5: Configure Environment Variables
